@@ -1,0 +1,43 @@
+Liste des requete qui peux vous aider 
+list of query can help you
+================================================================================================================
+Create first 5 user admin + authour (Note:password crypted with MD5,password is 123456 for all users ):
+
+CREATE (n:user {id: 1, email:'admin@admin.com',nom:'mechdoud',prenom:'mohammed',role:'admin',password:'e10adc3949ba59abbe56e057f20f883e'});
+CREATE (n:user {id: 2, email:'user1@user.com',nom:'mechdoud',prenom:'mohammed',role:'author',password:'e10adc3949ba59abbe56e057f20f883e'});
+CREATE (n:user {id: 3, email:'user2@user.com',nom:'salaoui',prenom:'amina',role:'author',password:'e10adc3949ba59abbe56e057f20f883e'});
+CREATE (n:user {id: 4, email:'user3@user.com',nom:'el alami',prenom:'karima',role:'author',password:'e10adc3949ba59abbe56e057f20f883e'});
+CREATE (n:user {id: 5, email:'user4@user.com',nom:'samiri',prenom:'bilal',role:'author',password:'e10adc3949ba59abbe56e057f20f883e'});
+=================================================================================================================
+Create first article:
+
+CREATE (n:article {id: 1, titre:'first article',image:'8.jpg',author:'mechdoud',description:'desccc'});
+CREATE (n:article {id: 2, titre:'secound article',image:'9.jpg',author:'el alami',description:'desccc'});
+CREATE (n:article {id: 3, titre:'3th article',image:'9.jpg',author:'samiri',description:'desccc'});
+CREATE (n:article {id: 4, titre:'4th article',image:'9.jpg',author:'salaoui',description:'desccc'});
+=================================================================================================================
+Create relationship Article Has [keyword]:
+match(n:article{id:1}) 
+merge(k:keywords{label:'Machine learning'})
+merge(n)-[:has]->(k)
+
+match(n:article{id:2}) 
+merge(k:keywords{label:'Machine learning'})
+merge(n)-[:has]->(k)
+
+match(n:article{id:3}) 
+merge(k:keywords{label:'Machine learning'})
+merge(n)-[:has]->(k)
+===================================================================
+Create relationship Author publish [article]:
+match(n:user{id:2})
+match(a:article{id:1})
+merge(n)-[:publish]->(a)
+
+match(n:user{id:3})
+match(a:article{id:2})
+merge(n)-[:publish]->(a)
+
+match(n:user{id:4})
+match(a:article{id:3})
+merge(n)-[:publish]->(a)
