@@ -38,8 +38,7 @@ try{
                     require_once 'address.php';
                 ?>
                 <?php
-                    echo $_SESSION['author'];
-                   
+                              
                 if(isset($_POST['submit_post'])){
                 
                     $titre = $_POST['title'];
@@ -67,6 +66,7 @@ try{
                     }
                     $id_art+=1;
                     $arr_tags=explode(",",$label);
+            
 
                     for($i=0;$i<sizeof($arr_tags);$i++){
                         $label=$arr_tags[$i];
@@ -136,7 +136,7 @@ try{
                     
                 }
                 ?>
-                <h3><i class="fa fa-file"></i>Add Post</h3>
+                <h3><i class="fa fa-file"></i>Ajouter l'article</h3>
                 <hr>
                 <h6>Required <i class="text-danger">*</i></h6>
 
@@ -156,23 +156,21 @@ try{
                 <form action="" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                         <label>Title <i class="text-danger">*</i></label>
-                        <input type="text" name="title" class="form-control" placeholder="Title" value="<?php if (isset($title)){echo $title;}?>">
+                        <input type="text" name="title" class="form-control" placeholder="Title" value="<?php if (isset($title)){echo $title;}?>" required>
                     </div>
                     <div class="form-group">
                         <label>Tags <span style="color:#005cbf">(Max 4 Tags)</span> <i class="text-danger">*</i></label>
-                        <input type="text" name="tags" class="form-control" placeholder="Tags" value="<?php if (isset($tags)){echo $tags;}?>">
+                        <input type="text" name="tags" class="form-control" placeholder="Tags" value="<?php if (isset($tags)){echo $tags;}?>"  required>
                     </div>
                     <div class="form-group">
                         <label>Picture <i class="text-danger">*</i></label>
-                        <input type="file" name="pic" class="form-control">
+                        <input type="file" name="pic" class="form-control"  required>
                     </div>
                     <div class="form-group">
-                        <label>Description <i class="text-danger">*</i></label>
-                        <textarea name="des" class="form-control" rows="5" >
-                            <?php if (isset($des)){echo $des;}?>
-                        </textarea>
+                        <label>Text de l'article <i class="text-danger">*</i></label>
+                        <textarea name="des" class="form-control" rows="12" value="" required ><?php if (isset($des)){echo $des;}?></textarea>
                     </div>
-                    <input type="submit" class="btn btn-success rounded-0" name="submit_post" value="Add Post">
+                    <input type="submit" class="btn btn-success rounded-0" name="submit_post" value="Add Post" >
                 </form>
             </div>
         </div>

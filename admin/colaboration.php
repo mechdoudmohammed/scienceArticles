@@ -28,7 +28,7 @@ if(isset($_POST['btn_refuse_colabor'])){
                 <?php
                 require_once 'address.php';
                 ?>
-                <h3><i class="fa fa-file"></i> Invitation Colaborator</h3>
+                <h3><i class="fa fa-file"></i> Invitation de Colaboration</h3>
                 <?php
                 
                 $id=$_SESSION['id'];
@@ -58,11 +58,11 @@ if(isset($_POST['btn_refuse_colabor'])){
                 <table class="table mt-5">
                     <thead>
                     <th><input type="checkbox" id="check_all_boxes"></th>
-                    <th>id</th>
-                    <th>nom prenom</th>
-                    <th>object</th>
-                    <th>accepter</th>
-                    <th>refuser</th>
+                    <th>Id</th>
+                    <th>Nom Prenom</th>
+                    <th>Objet</th>
+                    <th>Accepter</th>
+                    <th>Refuser</th>
                     </thead>
                     <tbody>
                     <tr>
@@ -72,13 +72,13 @@ if(isset($_POST['btn_refuse_colabor'])){
                         <td style="width:20%">demande de colaboration</td>
                         <td style="width:20%">
                         <form action="" method="post">
-                            <button name="btn_accepte_colabor" value="<?= $id;?>" style="background: #28a795;border: none; color: white;padding: 6px;border-radius: 8px;"><i class="fa fa-edit"></i> Accepter</button>
+                            <button name="btn_accepte_colabor" value="<?= $id;?>" style="background: #007bff;cursor: pointer;border: none; color: white;padding: 6px;border-radius: 8px;"><i class="fa fa-edit"></i> Accepter</button>
                         </form>
                         <!-- <a href="add_post?edit_post_id="><i class="fa fa-edit"></i></a> -->
                         </td>
                         <td style="width:20%">
                         <form action="" method="post">
-                            <button name="btn_refuse_colabor" value="<?= $id;?>" style="background: #28a795;border: none;color: white;padding: 6px;border-radius: 8px;"><i class="fa fa-trash"></i> Refuser</button>
+                            <button name="btn_refuse_colabor" value="<?= $id;?>" style="background: #007bff;cursor: pointer;border: none;color: white;padding: 6px;border-radius: 8px;"><i class="fa fa-trash"></i> Refuser</button>
                         </form></td>
                         <!-- <td style="width:5%"><a href="all_posts?del_post_id=<?= $id;?>"><i class="fa fa-trash"></i></a></td> -->
                     </tr>
@@ -88,8 +88,8 @@ if(isset($_POST['btn_refuse_colabor'])){
                     </tbody>
                 </table>
                 </form>
-                
-                <h3><i class="fa fa-file"></i> List of Colaborator with you</h3>
+                <hr>
+                <h3><i class="fa fa-file"></i> List des personnes qui colabor avec vous</h3>
                 <?php
                 
                 $id=$_SESSION['id'];
@@ -120,7 +120,7 @@ if(isset($_POST['btn_refuse_colabor'])){
                     <th><input type="checkbox" id="check_all_boxes"></th>
                     <th>id</th>
                     <th>Nom</th>
-                    <th>Titre</th>
+                    <th>Objet</th>
                     </thead>
                     <tbody>
                     <tr>

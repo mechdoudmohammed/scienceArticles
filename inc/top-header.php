@@ -16,13 +16,13 @@
                             
                                if(isset($_SESSION['email'])){?>
                              
-                                <li class="nav-item" style="list-style: none;"><a href='<?php $_SERVER["DOCUMENT_ROOT"]?>/scienceArticles/admin/index' class="nav-link text-white"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+                                <li class="nav-item" style="list-style: none;"><a href='<?php $_SERVER["DOCUMENT_ROOT"]?>/scienceArticles/admin/all_posts' class="nav-link text-white"><i class="fa fa-tachometer"></i> Dashboard</a></li>
                                 <li class="nav-item" style="list-style: none;"><a href='<?php $_SERVER["DOCUMENT_ROOT"]?>/scienceArticles/admin/logout' class="nav-link text-white"><i class="fa fa-sign-out"></i> Logout</a></li>
                                 <?php } else{?>
                                 
                             
                             <a href="admin/login">Login</a>
-                            <a href="#">Register</a>
+                            <a href="admin/register">Register</a>
                             <?php
                             }
                             ?>
@@ -30,7 +30,7 @@
                         <!-- Search Form -->
                         <div class="search-form">
                             <form action="#" method="post">
-                                <input type="search" name="search" class="form-control" placeholder="Search">
+                                <input type="search" name="Chercher" class="form-control" placeholder="Search">
                                 <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                         </div>

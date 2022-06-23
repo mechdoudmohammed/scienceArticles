@@ -1,3 +1,9 @@
 .list-group-item-primary{
-    background-color: #28a795 !important;
+    background-color: #007bff !important;
+}
+.list-group-item-primary.p-2 {
+    margin-top: 100vh;
+}
+a:hover {
+    text-decoration: none;
 }

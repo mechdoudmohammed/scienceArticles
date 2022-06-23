@@ -51,14 +51,8 @@
                 ?>
                 <!-- Side Bar Area -->
                 <div class="col-12 col-md-6 col-lg-4">
-                <h3 style="background: #28a745;
-    color: white;
-    padding: 6px;
-    font-size: 18px;
-    border-radius: 10px;
-    width: 78%;">Recommande article for you</h3>
-                    <?php
-                    
+                <h3 style="background: #007bff;color: white;padding: 6px; font-size: 18px;border-radius: 10px;width: 78%;">Recommande article for you</h3>
+                    <?php 
                         require_once 'inc/sidebar.php';
                     ?>
                 </div>
@@ -82,15 +76,7 @@
             </div>
         </div>
     </div>
-    <!-- ##### Popular News Area End ##### -->
 
-    <!-- ##### Video Post Area Start ##### -->
-<!--    video file goes here-->
-    <!-- ##### Video Post Area End ##### -->
-
-    <!-- ##### Editorial Post Area Start ##### -->
-<!--    editorial post goes here-->
-    <!-- ##### Editorial Post Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <?php

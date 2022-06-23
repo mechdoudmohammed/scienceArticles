@@ -24,22 +24,22 @@
                 </div>
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-6 col-lg-2">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <div class="footer-widget-area mt-80">
                         <!-- Title -->
-                        <h4 class="widget-title">Politics</h4>
+                        <h4 class="widget-title">À propos de nous</h4>
                         <!-- List -->
                         <ul class="list">
-                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Text ici</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-4 col-lg-2">
+                <div class="col-12 col-sm-4 col-lg-4">
                     <div class="footer-widget-area mt-80">
                         <!-- Title -->
-                        <h4 class="widget-title">Featured</h4>
+                        <h4 class="widget-title">Tags</h4>
                         <!-- List -->
                         <ul class="list">
                             <li><a href="#">Machine learning</a></li>

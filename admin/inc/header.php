@@ -1,6 +1,10 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark list-group-item-primary">
     <div class="container">
+        <!-- Logo -->
+        <div class="logo">
+                        <a href="../"><h3 style="color:white;">Scientifique Article</h3></a>
+                    </div>
         <div class="navbar-brand">
             <a href="<?php $_SERVER['DOCUMENT_ROOT']?>/scienceArticles/index"><img src="" alt=""></a>
         </div>

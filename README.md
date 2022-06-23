@@ -4,7 +4,11 @@ le projet est un system de recommandation des article scientifique entre les aut
 
 #Vous trouvres dans le dossier "this project database"des requêtes qui peux vous aidez durant le projet <br>
 #Dans le fichier db.php modifer username:'neo4j' password:'123456' avec vous données d'authentification.
+
 #install via composer
+composer install 
+
+#or
 composer require laudis/neo4j-php-client
 
 Pour plus d'information sur "Neo4j PHP Client and Driver"
