@@ -23,7 +23,7 @@ if(isset($_SESSION['email']) && $_SESSION['role'] != 'admin'){
                 <?php
                     require_once 'address.php';
                 ?>
-                <h3><i class="fa fa-users"></i> All Users</h3>
+                <h3><i class="fa fa-users"></i> Tous les auteur</h3>
                 <table class="table">
                     <thead>
                     <th>Id</th>

@@ -1,5 +1,7 @@
 Liste des requete qui peux vous aider 
 list of query can help you
+
+NB: database name is : Article
 ================================================================================================================
 Create first 5 user admin + authour (Note:password crypted with MD5,password is 123456 for all users ):
 

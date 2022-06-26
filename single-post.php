@@ -117,15 +117,6 @@
                 <div class="col-12 col-lg-4">
                     <div class="blog-sidebar-area">
 
-                        <!-- Latest Posts Widget -->
-                        <div class="latest-posts-widget mb-50">
-
-                            <!-- Single Featured Post -->
-                            <?php
-                                require_once 'inc/sidebar.php';
-                            ?>
-                        </div>
-
                         <!-- Popular News Widget -->
                         <h3 style="background: #007bff;color: white;padding: 6px; font-size: 18px;border-radius: 10px;width: 78%;">Recommande article pour vous:</h3>
 
